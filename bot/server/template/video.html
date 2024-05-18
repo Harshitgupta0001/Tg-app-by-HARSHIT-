@@ -172,16 +172,7 @@
     function download() {
         const openDownloadLink = downloadlink;
         window.location.href = openDownloadLink;
-    }
-    function get_file() {
-        const regex = /(\d+)\?id=(\d+)&/;
-        const match = videolink.match(regex);
-        if (match) {
-            const chatId = "-100" + match[1];
-            const messageId = match[2];
-            const openTG = `https://t.me/<!-- Username -->?start=file_${messageId}${chatId}`;
-            window.location.href = openTG;
-        }
+    
     }
     function copyUrl() {
         const url = downloadlink;
